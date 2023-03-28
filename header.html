@@ -1,0 +1,100 @@
+<style>
+    header{
+        background-color: #1a2238;
+        position: absolute;
+  left: 0;
+  bottom: 100;
+  width: 100%;
+  top:0;
+  color: white;
+  text-align: center;
+    }    
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 5%;
+        padding-top: 10px;
+        padding-left: 10px;
+        }
+    .logo2{
+        color: white;
+    }
+    nav ul li{
+        list-style-type: none;
+        display: inline-flex;
+        padding: 10px 10px;
+    }
+    nav ul li a{
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    nav ul li a:hover{
+        color: rgb(57, 137, 249);
+        transition: .3s;
+    }
+    button{
+        border: none;
+        border-radius: 30px;
+        padding: 12px 30px;
+    }
+    @media  (max-width: 854px){
+        h3.logo{
+            font-size:small;
+            align-items: center;
+            padding-left: 40%;
+        }
+        nav{
+            font-size: smaller;
+            justify-content: space-between;
+            display: inline;
+        }
+        nav ul button.register{
+            align-items: center;
+            margin-right: 30%;
+            padding: 6px 15px;
+        }
+        
+    }
+</style>
+<script>
+   
+</script>
+<header>
+    <div class="head">
+    <nav onmouseover="onalert()">
+        <h3 class="logo"><span class="logo2"><a href="home.html">RELAX</span> & RENT</h3></a>
+        <ul>
+            <li ><a  class="" href="home.html">Home</a></li>
+            <li ><a href="rentalproperties.html">Rental Properties</a></li>
+            <li ><a href="">Expert Advice</a></li>
+            <li ><a href="blog.html">Blogs</a></li>
+            <li ><a href="aboutus.html">About us</a></li>
+            <button style="background-color: blue;color:white;" class="register"type="button"><a href="registration.html">Register</a></button>
+        </ul>
+    </nav>
+    </div>
+</header>
+<script>
+    var btn1 = document.getElementById("btn1");
+    var btn2 = document.getElementById("btn2");
+    var btn3 = document.getElementById("btn3");
+    var btn4 = document.getElementById("btn4");
+    var btn5 = document.getElementById("btn5");
+    
+    function mousehover1(){
+        btn1.style.fontSize = "xx-large";
+        btn2.style.fontSize = "xx-large";
+        btn3.style.fontSize = "xx-large";
+        btn4.style.fontSize = "xx-large";
+        btn5.style.fontSize = "xx-large";
+    } 
+    function mouseleave1(){
+        btn1.style.fontSize = "large";
+        btn2.style.fontSize = "large";
+        btn3.style.fontSize = "large";
+        btn4.style.fontSize = "large";
+        btn5.style.fontSize = "large";
+    }
+</script>

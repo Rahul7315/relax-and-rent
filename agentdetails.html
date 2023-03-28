@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+            $('.header').load('header.html');
+            $('.footer').load('footer.html');
+        });
+    </script>
+    <link rel="stylesheet" href="home.css">
+    <style>
+        .main-container{
+        
+            background-color:beige;
+            width: 80%;
+            height: 1500px;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 170px;
+            margin-bottom: 10px;
+        }
+        .agent-details1{
+            background-color: white;
+            margin-left: 70px;
+            margin-top: 10px;
+            width: 20%;
+            height: 75%;
+            border-radius: 10px;
+            position: absolute;
+            top:200px;
+        }
+        .agent-img{
+            border: 2px solid black;
+            border-radius: 50%;
+            margin: 10px 20px;
+        }
+        table{
+            border: 2px solid black;
+            margin-top: 20px;
+            margin: 30px 40px;
+        }
+        .a-details{
+            text-align: left;
+            margin-left: 10px;
+            font-size: medium;
+        }
+        .properties-container{
+            background-color: white;
+            margin-left: 140px;
+            margin-top: 50px;
+            width: 30%;
+            height: 30%;
+            position: absolute;
+            left:475px;
+            top: 160px;
+            border-radius: 10px;
+         
+        }
+
+        .intro{
+            padding: 10px 20px;
+            justify-content: center;
+            text-align: justify;
+        }
+        .h-img{
+            height: 100%;
+            width: 100%;
+            border-radius: 0px 0px 10px 10px;
+           
+
+        }
+        .h-text{
+            color: black;
+            padding: 10px 20px;
+            top:450px;
+            text-align: justify;
+        }
+       
+    </style>
+
+    </head>
+<div class="header"></div>
+<body>
+    <div class="main-container">
+        <div class="agent-details1">
+            <img class="agent-img" src="img/a1.jpg" alt="img">
+            <table>
+                <tr>
+                    <td><span class="a-details">Name:</span>  </td><td><span class="a-details">Rahul</span></td>
+                </tr>
+                <tr></tr>
+                <tr>
+                    <td><span class="a-details">Experience:</span>  </td><td><span class="a-details"> 4 years</span></td>
+                </tr>
+                <tr></tr>
+                <tr>
+                    <td><span class="a-details">Phone No:</span>  </td><td><span class="a-details"> +1 437 988 7315</span></td>
+                </tr>
+                <tr></tr>
+                <tr>
+                    <td><span class="a-details">Email:</span>  </td><td><span class="a-details"> John@gmail.com</span></td>
+                </tr>
+            </table>
+            <div class="intro">
+                <p>A real estate agent is a licensed professional who 
+                    represents buyers or sellers in real estate transactions, 
+                    A real estate agent usually works on commission, being paid a 
+                    percentage of the property’s sale price</p>
+            </div>
+        </div>
+        <div class="properties-container">
+            <div class="properties-card">
+                <img src="img/h1.jpg" class="h-img" alt="" >
+                <p class="h-text">
+                    Detached House In The Heart Of Mississauga.!! 4 Bedroom 3 Bath, 
+                    Eat-In Kitchen, Formal Living And Dining Rooms And A Family Room. 
+                    Extra Large Master Bedroom With Private Ensuite Bath. Enjoy The Private 
+                    Fenced In Large Backyard.4 Car Parking With Access Through The Garage. Close 
+                    To All Major Highways And All Amenities. 
+                </p>
+            </div>
+            <div class="properties-card">
+                <img src="img/h1.jpg" class="h-img" alt="" >
+                <p class="h-text">
+                    Detached House In The Heart Of Mississauga.!! 4 Bedroom 3 Bath, 
+                    Eat-In Kitchen, Formal Living And Dining Rooms And A Family Room. 
+                    Extra Large Master Bedroom With Private Ensuite Bath. Enjoy The Private 
+                    Fenced In Large Backyard.4 Car Parking With Access Through The Garage. Close 
+                    To All Major Highways And All Amenities. 
+                </p>
+            </div>
+            <div class="properties-card">
+                <img src="img/h1.jpg" class="h-img" alt="" >
+                <p class="h-text">
+                    Detached House In The Heart Of Mississauga.!! 4 Bedroom 3 Bath, 
+                    Eat-In Kitchen, Formal Living And Dining Rooms And A Family Room. 
+                    Extra Large Master Bedroom With Private Ensuite Bath. Enjoy The Private 
+                    Fenced In Large Backyard.4 Car Parking With Access Through The Garage. Close 
+                    To All Major Highways And All Amenities. 
+                </p>
+            </div>
+        </div>
+       
+        
+    </div>
+</body>
+
+<div class="footer"> </div>  
+</html>

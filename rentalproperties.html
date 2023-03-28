@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+            $('.header').load('header.html');
+            $('.footer').load('footer.html');
+        });
+    </script>
+    <link rel="stylesheet" href="home.css">
+    <style>
+        .main-container{
+            width: 80%;
+            height: 80%;
+            margin-left: 50px;
+            margin-right: 20px;
+            margin-top: 10%;
+        }
+        .card-container{
+            margin-left: 120px;
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .card{
+            margin-left: 10px;
+            width: 280px;
+            height: 300px;
+            box-shadow: 0 10px 10px black;
+        }
+        .img{
+            position: absolute;
+            height: 300px;
+            width: 280px;
+            box-shadow: 0 10px 10px black;
+            border-radius: 10px;
+        }    
+    </style>
+
+    </head>
+<div class="header"></div>
+<body style="background:rgba(176, 231, 147, 0.767);">
+    
+    <div class="main-container">
+        <h1 style="margin-left: 210px; margin-top: 10px;">List of Properties</h1>
+        <a style = "margin-left: 85%; color:black;" href="listviewproperty.html">List View</a>
+        <div class="card-container">
+            <div class="card">
+                <a href="property.html"><img class="img" src="img/r1.jpg"  alt=""></a>
+            </div>
+            <div class="card">
+                <a href="property.html"><img class="img" src="img/r2.jpg" alt=""></a>
+            </div>
+            <div class="card">
+                <a href="property.html"><img class="img" src="img/r3.jpg" alt=""></a>
+            </div>
+            <div class="card">
+                <a href="property.html"><img class="img" src="img/r4.jpg" alt=""></a>
+            </div>
+            <div class="card">
+                <a href="property.html"><img class="img" src="img/r5.jpg" alt=""></a>
+            </div>
+            <div class="card">
+                <a href="property.html"><img class="img" src="img/r6.jpg" alt=""></a>
+            </div>
+            <div class="card">
+                <a href="property.html"><img class="img" src="img/r8.jpg" alt=""></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+<br><br><br>
+<div class="footer"> </div>  
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    
+    <style>
+        .heading{
+           margin-top: 20px;
+            width: 100%;
+            margin-left: 80%;
+            position:absolute;
+        }
+        .img{
+            height: 100%;
+            width: 100%;
+            position:absolute;
+            border: 1px black solid;
+        }
+        img{
+            height: 100%;
+            width: 100%; 
+        }
+        .details-container{
+            background-color: whitesmoke(28, 12, 122);
+            height: 100%;
+            width: 50%;
+            position:absolute;
+            margin-left: 2.2%;
+
+        }
+        .title{
+            margin-left: 50px;
+        }
+        .info-container{
+            box-shadow: 12px 12px 2px 1px rgba(196, 196, 250, 0.2);
+            background-color: whitesmoke;
+            width: 95%;
+            height: 85%;
+            border: 2px solid black;
+            margin-top: 80px;
+            margin-left: 80%;
+        }
+        .info1{
+            margin-left: 50px;
+            margin-top: 50px;
+        }
+        .info2{
+            top: 132px;
+            position: absolute;
+            margin-left: 485px;
+            margin-top: 50px;
+            width: 50%;
+            
+        }
+        input, select, textarea{
+            border-radius: 12px;
+            border: 1px black solid;
+            box-sizing: border-box;
+            color:black;
+            font-size: 18px;
+            height: 100%;
+            outline: 0;
+            padding: 4px 20px 0;
+            width: 50%;
+        }
+        .button{
+            border: 2px solid black;
+            border-radius: 10px;
+            box-sizing: border-box;
+            background-color: white;
+            height: 5%;
+            width: 20%;
+            margin-left: 40%;
+            color:black;
+            padding: 5px 5px;
+        }
+        .error{
+            color: red;
+            position:absolute;
+            width: 100%
+        }
+    </style>
+
+    <script src="registration.js"></script>
+</head>
+<body>
+    <div class="main-container">
+        <div class="img">
+            <img src="img/cover-img1.jpg" alt="">
+        </div>
+        <div class="details-container">
+            <div class="heading">
+                <h2 style="margin-left: 35%; color:white;">Registration Form</h2>
+            </div>
+            <div class="info-container">    
+            <form id="myform"  name="myform" action="home.html"  onsubmit="return validationForm()" method="post" >
+           <div class="title">
+                <h2>Personal information</h2>
+            </div>
+            <section class="info1">
+                <label for="">First Name</label><br>
+                <input type="text" name="first_name" id="username"  placeholder="First Name"><br>
+                <div class="error" id="msg_fname"></div><br><br>
+                <label for="">Last Name</label><br>
+                <input type="text" name="lname" id="lname" placeholder="Last Name"><br>
+                <div id="msg_lname" class="error"></div><br><br>
+                <label for="">Email</label><br>
+                <input type="text"  name="email"  id="email" placeholder="Email"><br>
+                <div id="msg_email" class="error"></div><br><br>
+                <label for="">Phone Number</label><br>
+                <input type="text" name="phoneno" id="phno" placeholder="Phone Number"><br>
+                <div id="msg_phno" class="error"></div><br><br>
+                <label for="">Date to visit</label><br>
+                <input type="date" name="date" id="selectDate">
+                <div id="msg_date" class="error"></div><br> <br><br>
+                <label for="">Valid Goverment Id</label><br>
+                <input type="file" src="" alt="" id="img">
+                <div id="msg_img" class="error"></div><br>
+            </section>
+            <section class="info2">
+                <label for="">Province</label><br>
+                <select name="state" onchange= makemenu(this.value) id="state">
+                    <option value="select value">Select Province</option>
+                    <option value="Ontario">Ontario</option>
+                    <option value="Alberta">Alberta</option>
+                    <option value="Qubec">Qubec</option>
+                    <option value="British">British columbia</option>
+                </select> <br>
+                <div id="msg_state" class="error"></div><br><br>
+                <label for="">City</label><br>
+                <select name="city" id="citySelect">
+                    <option value="0">Select Cities</option>
+                    <option value=""></option>
+                </select><br>
+                <div id="msg_city" class="error"></div><br><br>
+                <label for="">Special Requirement</label><br>
+                <textarea height="85px" width="260px" name="" id="comment" cols="30" rows="10"></textarea>
+                <div id="msg_comment" class="error"></div><br>
+            </section>
+            <br><br><br><br>
+            <button type="submit" class="button"  value="submit" > Submit</button>
+            </div>
+        </form>
+        </div>
+    </div>
+</body>
+</html>

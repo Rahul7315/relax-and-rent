@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+            $('.header').load('header.html');
+            $('.footer').load('footer.html');
+        });
+    </script>
+    <link rel="stylesheet" href="home.css">
+    <style>
+        .blog-main-container{
+            margin-top: 10%;
+        }
+        
+        .editorspick{
+            width: 20%;
+            color: white;
+        }
+        .blog-sub-container2{
+            margin-left: 40px;
+            width: 60%;
+            margin-top: 10%;
+            background-image: url('img/blog-cover-img2.jpg');
+            text-align: justify;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+       
+        .b-container{
+            margin-top:20px;
+            height: 900px;
+            width: 100%;
+            
+        }
+        .blog1{
+            border: 2px solid rgb(62, 71, 252);
+            border-radius: 20px 0px 0px 20px; 
+            margin-left: 40%;
+            margin-top: 10;
+            height: 300px;
+            width: 60%; 
+            background-color: rgb(35, 172, 240);
+        }
+        .b-img{
+            position: absolute;
+            height: 250px;
+            width: 20%;
+            border-radius: 10px;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        .b-text{
+            margin-left: 40%;
+            text-align: justify;
+        }
+        .blog2{
+            margin-top: 40px;
+            border: 2px solid rgb(62, 71, 252);
+            border-radius: 0px 10px 10px 0px;
+            height: 300px;
+            width: 60%;
+            background-color:  rgb(35, 172, 240);
+        }
+        .b-img2{
+            position: absolute;
+            height: 250px;
+            width: 20%;
+            border-radius: 10px;
+            margin-top: 20px;
+            margin-left:38%;
+           
+        }
+        .b-text2{
+            width: 60%;
+            margin-top: 0px;
+            text-align: justify;
+       }
+       .box-blog{
+
+        }
+       .blog-sub-container3{
+           display: flexbox;
+           flex-direction: row;
+           text-align: justify;
+           background-color: rgb(79, 79, 231);
+           width: 30%;
+           position: absolute;
+           top:1285px;
+           left: 990px; 
+       }
+       .box-blog{
+        margin: 20px;
+       }
+    </style>
+    </head>
+<div class="header"></div>
+
+<body style="background-color: white;">
+    <div class="blog-main-container">
+        <h1 style="margin-left: 20px;">Blogs</h1>
+        <div class="b-container">
+            <div class="blog1">
+                <img src="img/r1.jpg" class="b-img" alt="">
+                <div class="b-text">
+                    <h1 style="margin-top: 20px;">New Year, New Home: Tips for finding the perfect property in the New Year </h1>
+                    <span style="margin-top: 10px;">Jan 13th, 2023 </span>
+                    <h5 style="margin-top: 5px;">To find an apartment that’s right for you, you'll need to 
+                        know what you're able to afford to narrow down your apartment rental search. Start 
+                        by determining your ideal rental budget. It should be easy for you to manage (not too expensive) 
+                        in case your financial circumstances change and should leave room for any additional charges like
+                         internet, heat and hydro.</h5>
+                </div>
+            </div>
+           <div class="blog2">
+            <img src="img/r2.jpg" class="b-img2" alt="">
+            <div class="b-text2">
+                <h1 style="margin-top: 20px;">Choose the overall location </h1>
+                <span style="margin-top: 10px;">Jan 18th, 2022 </span>
+                <h5 style="margin-top: 5px;">
+                    Are you considering moving cities as well as properties? If you don't need to move 
+                    to a particular place (for work or personal reasons), do your research before moving
+                     to a new-to-you destination. Start by researching the average rental cost in your desired 
+                     destination. If it fits your budget, find out if the Canadian city you're moving to has a
+                      good cost of living and quality of life rating. 
+                </h5>
+            </div>
+            </div>
+            <br><br>
+            <div class="blog1">
+                <img src="img/r3.jpg" class="b-img" alt="">
+                <div class="b-text">
+                    <h1 style="margin-top: 20px;">Narrow down the right neighbourhood </h1>
+                    <span style="margin-top: 10px;">Jan 13th, 2023 </span>
+                    <h5 style="margin-top: 5px;">Before you start searching for available rentals, you'll want to choose your 
+                        desired neighbourhood(s). For many renters, the neighbourhood can be more important than the home itself 
+                        because it impacts their lifestyle and commute heavily. Love to go out at night? A downtown location might
+                         be best. Need a safe and quiet area close to schools for your kids? The suburbs may suit you best. Want to
+                          walk more than drive or commute by transit? Look for neighbourhoods in close proximity to your school or
+                           work, grocery stores, shops and entertainment venues.</h5>
+                </div>
+            </div>
+        </div>
+       
+        <div class="blog-sub-container2">
+            <h1 style="margin: 25% 0; color:white;">Top Blogs</h1>
+            <div class="editorspick">
+                <h5>Jan 13th, 2023</h5>
+                <img style="height: 120px; width: 180px; border: 2px solid black;" src="img/h3.jpg" alt="">
+                <h4>Home</h4>
+                <p>Before you start searching for available rentals, you'll want to choose your desired neighbourhood(s). 
+                    For many renters, the neighbourhood can be more important than the home itself because it impacts their
+                     lifestyle and commute heavily. Love to go out at night?</p>
+            </div>
+            <div class="editorspick">
+                <h5>Mar 10th, 2023</h5>
+                <img style="height: 120px; width: 180px; border: 2px solid black;" src="img/h1.jpg" alt="">
+                <h4>Rental</h4>
+                <p>Before you start searching for available rentals, you'll want to choose your desired neighbourhood(s). 
+                    For many renters, the neighbourhood can be more important than the home itself because it impacts their
+                     lifestyle and commute heavily. Love to go out at night?</p>
+            </div>
+            <div class="editorspick">
+                <h5>Dec 13th, 2022</h5>
+                <img style="height: 120px; width: 180px; border: 2px solid black;" src="img/h2.jpg" alt="">
+                <h4>Pricing</h4>
+                <p>Before you start searching for available rentals, you'll want to choose your desired neighbourhood(s). 
+                    For many renters, the neighbourhood can be more important than the home itself because it impacts their
+                     lifestyle and commute heavily. Love to go out at night?</p>
+            </div>
+        </div>
+
+        <div class="blog-sub-container3">
+            <h1>Recent Blogs</h1>
+            <div class="box-blog">
+                <p>If the building and unit look good to you, be thorough and walk around the 
+                    \property both day and night. Is it in good condition, well cared for and 
+                    brightly lit? Would you feel safe walking down the street and coming home
+                     alone at night? These little things matter and will greatly impact your 
+                     day-to-day life.</p>            
+            </div>
+            <div class="box-blog">
+                <p>If the building and unit look good to you, be thorough and walk around the 
+                    \property both day and night. Is it in good condition, well cared for and 
+                    brightly lit? Would you feel safe walking down the street and coming home
+                     alone at night? These little things matter and will greatly impact your 
+                     day-to-day life.</p>                 
+            </div>
+            <div class="box-blog">
+                <p>If the building and unit look good to you, be thorough and walk around the 
+                    \property both day and night. Is it in good condition, well cared for and 
+                    brightly lit? Would you feel safe walking down the street and coming home
+                     alone at night? These little things matter and will greatly impact your 
+                     day-to-day life.</p>                  
+            </div>
+        </div>
+    </div>    
+</body>
+<br><br><br>
+<div class="footer"> </div>  
+</html>
