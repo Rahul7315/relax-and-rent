@@ -1,0 +1,226 @@
+
+.front-img{
+  margin-top: 80px;
+  margin-left: 59%;
+  height: 40%;
+  position:absolute;
+}
+.back-img{
+  position:absolute;
+  width: 80%;
+  height: 60%;
+}
+.head-msg{
+  position: relative;
+
+  display: inline;
+}
+.cover-text{
+  position: absolute; 
+  margin-top: 130px;
+  margin-left: 20px;
+  box-shadow: 12px 12px 2px 1px rgb(1, 32, 44);
+}
+.cover-msg{
+  position: absolute;
+  color: rgb(145, 214, 242);
+  margin-top: 180px;
+  margin-left: 40px;
+}
+.btn-click{
+  color:skyblue;
+  border: 3px solid rgb(3, 116, 229);
+  position:absolute;
+  background-color: blue;
+  height: 40px;
+  width: 190px;
+  margin-top: 190px;
+  margin-left: 30px;
+  padding-bottom: 30px;
+  }
+ .btn-signup{
+  margin-left: 56%;
+  border: 3px solid blue;
+  color: blue;
+  background-color: white;
+ }
+ .btn-login{
+  border: 3px solid blue;
+  color: blue;
+  background-color: white;
+ }
+
+.home-container{
+      margin-left: 70px;
+      margin-top: 10%;
+      height: 80%;
+      width:90%;
+      display: flex;
+    
+      color: black;
+      justify-content: center;
+      flex-wrap: wrap;
+  }
+  .card{
+    background-color: rgb(4, 175, 205); 
+    width: 270px;
+   
+    margin: 20px 20px;
+    border-radius: 20px;
+  }
+  .card-img{
+    background-color: azure;
+    height: 300px;
+    margin-bottom: 10px;
+    border-radius: 15px 15px 0 0;
+  }
+  .img{
+    border-radius: 15px 15px 0 0;
+    position: absolute;
+    height: 300px;
+    width: 270px;
+  }
+  .link{
+    padding: 10px 10px;
+    background-color: black;
+    color: white;
+    display: block;
+    text-align: center;
+    margin: 20px 30px;
+    text-decoration: none;
+  }
+
+  .card:hover{
+    background-color: rgb(97, 243, 192);
+    color: black;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 1s ease;
+  }
+  
+  .left-section{
+    margin-left: 84%;
+    width: 14%;
+    height: 50%;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    background-color: blanchedalmond;
+    border-radius: 15px 15px 15px 15px;
+    flex-wrap: wrap;
+  }
+  .news-block{
+    padding: 0px 10px;
+    margin-top: 20px;
+  }
+  .news-title{
+    display: flexbox;
+    background-color: beige;
+  }
+  .agent-container{
+      margin-left: 100px;
+      margin-top: 10%;
+      width:90%;
+      display: flex;
+      color: black;
+      justify-content: center;
+     
+  }
+  .container {
+position: relative;
+width: 50%;
+margin-left: 20px;
+display: flex;
+justify-content: space-around;
+}
+
+.image {
+display: block;
+width: 60%;
+height: auto;
+border-radius: 50%;
+box-shadow: 0 10px 20px black;
+}
+
+.overlay {
+position: absolute;
+top: 0;
+bottom: 0;
+left: 65px;
+right: 0;
+height: 100%;
+width:  60%;
+opacity: 0;
+transition: .5s ease;
+background-color: rgb(23, 116, 237);
+border-radius: 50%;
+}
+
+.container:hover .overlay {
+opacity: 1;
+}
+
+.text {
+color: white;
+font-size: 20px;
+position: absolute;
+top: 50%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+text-align: center;
+border-radius: 50%;
+}
+
+.blog-container{
+width: 60%;
+ height: 560px;
+ margin-left: 140px;
+ margin-right: 140px;
+ margin-top: 70px;
+ margin-bottom: 10px; 
+}
+.blog-text{
+  border-radius: 30px;
+  border: 2px soild black;
+  height: 90%;
+  width: 70%;
+  background-color: rgb(139, 196, 243);
+  color:black;
+  margin-top: 20px;
+}
+.blog-title{
+  font-size: x-large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: inline;
+  color: bisque;
+  margin-left: 30px;
+}
+.blog-para{
+  font-size: large;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 5px 5px;
+  margin-left: 30px;
+  margin-right: 90px;
+}
+.blog-img{
+  position: absolute;
+  margin-left: 550px;
+  height: 450px;
+  width: 650px;
+  top: 765.60px;
+
+}
+.blog-imgs{
+  position: absolute;
+  height: 390px;
+  width: 540px;
+  border-radius: 50px;
+  box-shadow: 0 10px 10px black;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}

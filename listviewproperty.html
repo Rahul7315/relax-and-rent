@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+            $('.header').load('header.html');
+            $('.footer').load('footer.html');
+        });
+    </script>
+    <link rel="stylesheet" href="home.css">
+    <style>
+        .main-container{
+          
+            margin-top: 200px;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        table,th,tr{
+           
+            color:white;
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+        th{
+            background-color: rgb(12, 176, 12);
+        }
+        tr{
+            background-color: rgb(180, 180, 180);
+        }
+        td{
+            padding-top: 30px;
+            padding-left: 20px;
+        }
+        .table-container{
+            margin: 0 25%;
+        }
+    </style>
+    </head>
+<div class="header"></div>
+<body style="background:rgba(176, 231, 147, 0.767);">
+    
+  <div class="main-container">
+    <div class="table-container">
+        <a style = "margin-left: 75%; color:black;" href="rentalproperties.html">Grid View</a>
+        
+        <table>
+            <th>No</th>
+            <th>Address</th>    
+            <th>Rent</th>
+            <th>Contact No</th>
+            <th>Owener</th>
+            <tr>
+                <td>1</td>
+                <td>100,Parkway Forest Dr</td>
+                <td>$3400</td>
+                <td>+1 437 988 7315</td>
+                <td><img style="height: 70px; width:60px; border-radius: 50%;" src="img/a1.jpg" alt=""></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>10,Parkway Forest Dr</td>
+                <td>$3200</td>
+                <td>+1 437 988 7315</td>
+                <td><img style="height: 70px; width:60px; border-radius: 50%;" src="img/a2.jpg" alt=""></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>30,Shapred Ave</td>
+                <td>$3000</td>
+                <td>+1 437 988 7315</td>
+                <td><img style="height: 70px; width:60px; border-radius: 50%;" src="img/a3.jpg" alt=""></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>80,Heron Hill Dr</td>
+                <td>$4200</td>
+                <td>+1 437 988 7315</td>
+                <td><img style="height: 70px; width:60px; border-radius: 50%;" src="img/a6.jpg" alt=""></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>10,Parkway Forest Dr</td>
+                <td>$3200</td>
+                <td>+1 437 988 7315</td>
+                <td><img style="height: 70px; width:60px; border-radius: 50%;" src="img/a5.jpg" alt=""></td>
+            </tr>
+        </table>
+    </div>
+  </div>
+</body>
+
+<br><br><br>
+<div class="footer"> </div>  
+</html>
