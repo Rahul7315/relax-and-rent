@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+            $('.header').load('header.html');
+            $('.footer').load('footer.html');
+        });
+    </script>
+    <script>
+       $(document).ready(function(){
+  $(".click").click(function () {
+    $(this).next("div.content").slideToggle("fast");
+     $(this).find(".arrow").toggleClass('rotate');
+      $(this).find(".arrow").toggleClass('rotate-reset');
+    
+  });
+});
+    </script>
+    <link rel="stylesheet" href="home.css">
+    <style>
+        .main-container-aboutus{
+            height: 1900px;
+            width: 80%;
+            margin-top: 10%;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+        .a-container1{
+            margin-top: 20%;
+           height: 30%;
+            display: flex;
+            flex-direction: row;
+            
+        }
+        .a-container2{
+            margin-top: 10%;
+        }
+        .a-card{
+            margin-left: 160px;
+        }
+        .a-img{
+            position: absolute;
+            height: 20%;
+            width: 10%;
+        }
+        .a-text{
+            margin-top: 180px;
+            width: 170px;
+        }
+        .click{
+  background:#efefef;
+  height:auto;
+  cursor:pointer;
+  margin-top:10px;
+  padding:10px;
+  margin-left: 30px;            
+}
+
+.click i{
+     color: #b7acac;
+    font-size: 12px;
+    margin-top: 5px;
+    
+}
+
+.content{
+  display:none;
+  margin-left: 40px;
+}
+
+.rotate {
+    transform: rotate(-180deg);
+    /*transform: rotate(180deg);*/
+    transition: .3s;
+}
+.rotate-reset {
+    transform: rotate(0deg);
+    transition: .3s;
+}
+
+
+p i{
+  float:right
+}
+.sub-container2{
+    width:40%;
+    margin-left: 50%;
+}
+.a-sub-img{
+    width: 20px;
+    height: 30px;
+    position: absolute;
+}
+.a-container3{
+    margin-top: 30%;
+    
+}
+.title-pillars{
+    background-color: rgb(32, 32, 125);
+    color: white;
+    padding-left: 35%;
+    height: 40px;
+    padding-top: 20px;
+}
+.pillars{
+    display: flex;
+    flex-direction:row;
+
+}
+.pillars-details{
+    height: 190px;
+    width: 290px;
+    background-color:beige;
+    margin-left: 10px;
+}
+    </style> 
+    </head>
+<div class="header"></div>
+
+<body>
+    <div class="main-container-aboutus">
+        <div class="a-container1">
+            <div class="a-card">
+                <img src="img/img-ab1.png" class="a-img" alt="">
+                <div class="a-text">
+                    <h2 style="text-align: center;">Residency</h2>
+                    <h5 style="margin: 10px; text-align:center;">we don’t measure success in numbers, we measure it in stories.
+                     Success is felt on a human scale, in the residents from across the country </h5>
+                </div>
+            </div>
+            
+            <div class="a-card">
+                <img src="img/ab-img2.png" class="a-img" alt="">
+                <div class="a-text">
+                    <h2 style="text-align: center;">Money</h2>
+                    <h5 style="margin: 10px; text-align:center;">Rental real estate has been a great investment for many Canadians.
+                         But how do you assess whether yours is likely to work out </h5>
+                </div>
+            </div>
+
+            <div class="a-card">
+                <img src="img/ab3-img.png" class="a-img" alt="">
+                <div class="a-text">
+                        <h2 style="text-align: center;">Contract</h2>
+                        <h5 style="margin: 10px; text-align:center;">A lease agreement is a legally binding contract between a landlord and tenant that outlines the terms by which the tenant can rent property from the landlord</h5>
+                </div>
+            </div>    
+        </div>
+        <div class="a-container2">
+                <img src="img/r2.jpg" style="height: 50%; width: 30%; position: absolute; margin-left: 40px;" alt="">
+            <div class="sub-container2">
+                <img src="img/trust.png" class="a-sub-img" alt="">
+                <p class="click col-lg-12">Trust
+               <i class="fa fa-arrow-down rotate-reset arrow"></i>
+                </p>
+                <div class="content">We have a strong moral code and we're committed to forging long-term relationships. We're true to our word and consistent in our behaviour. 
+                    We have integrity and we stand by the promises we make, even if it comes at a cost.</div>
+              </div>
+
+            <div class="sub-container2">
+                <img src="img/ambition.png" class="a-sub-img" alt="">
+                <p class="click col-lg-12">Ambition
+               <i class="fa fa-arrow-down rotate-reset arrow"></i>
+                </p>
+                <div class="content">We have a strong moral code and we're committed to forging long-term relationships. We're true to our word and consistent in our behaviour. 
+                    We have integrity and we stand by the promises we make, even if it comes at a cost.</div>
+            </div>
+
+            <div class="sub-container2">
+                <img src="img/collaboration.png" class="a-sub-img" alt="">
+                <p class="click col-lg-12">Collaboration
+               <i class="fa fa-arrow-down rotate-reset arrow"></i>
+                </p>
+                <div class="content">We believe we achieve more by cooperating and working as a team. We offer help without waiting to be asked. We find out what is needed, and we pitch in together.</div>
+            </div>
+
+             <div class="sub-container2">
+                <img src="img/having_fun.png" class="a-sub-img" alt="">
+                <p class="click col-lg-12">Having a fun
+               <i class="fa fa-arrow-down rotate-reset arrow"></i>
+                </p>
+                <div class="content">We're passionate and we love what we do and have fun doing it. Not only do we celebrate achievement and success, but we enjoy the journey.</div>
+            </div>
+        </div>  
+
+        <div class="a-container3">
+            <div class="title-pillars">
+                SUSTAINABILITY PROGRAM PILLARS
+            </div>
+            <div class="pillars">
+                <div class="pillars-details">
+                    <h1 style="display: flexbox; background-color: orangered;">Resource Efficiency</h1>
+                    <p style="text-align: center; margin: 10px 10px;">Improve operational Efficiency of buildings</p>
+                </div>
+                <div class="pillars-details">
+                    <h1 style="display: flexbox; background-color: orangered;">Resiliene</h1>
+                    <p style="text-align: center; margin: 10px 10px;">
+                
+                        Protect portfolio value through environmental and social risk identification and management    </p>
+                </div>
+                <div class="pillars-details">
+                    <h1 style="display: flexbox; background-color: orangered;">Tenant experience </h1>
+                    <p style="text-align: center; margin: 10px 10px;">
+                
+                        Strengthen relationships with residents, prospects, and tenants    </p>
+                </div>
+                <div class="pillars-details">
+                    <h1 style="display: flexbox; background-color: orangered;">Relationships</h1>
+                    <p style="text-align: center; margin: 10px 10px;">
+                
+                        Enhance relationships with employees, suppliers, and communities    </p>
+                </div>
+                
+            </div>
+        </div>
+    </div> 
+</body>
+<br><br><br>
+<div class="footer"> </div>  
+</html>
